@@ -33,7 +33,7 @@ class MapStyleTransformerImpl : MapStyleTransformer {
         const val DAY_MAP_STYLE = "mapbox://styles/mapbox/navigation-day-v1"
         const val NIGHT_MAP_STYLE = "mapbox://styles/mapbox/navigation-night-v1"
         const val SATELLITE_MAP_STYLE = "mapbox://styles/mapbox/satellite-streets-v12"
-        const val MAP_3D_STYLE = ""
+        const val MAP_3D_STYLE = "mapbox://styles/mapbox/navigation-day-v1"
 
     }
 }
