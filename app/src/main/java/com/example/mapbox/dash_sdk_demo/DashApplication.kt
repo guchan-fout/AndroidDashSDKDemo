@@ -13,12 +13,14 @@ class DashApplication : Application() {
         // Initialize SDKs, plugins, and other global state here
         DashSdk.getInstance(isDebug = BuildConfig.DEBUG).init(context = this) {
             declare(MapboxPluginImpl())
+            declare(MapStylePluginImpl())
         }
     }
 }
 
 internal class MapboxPluginImpl : MapboxPlugin {
     override val accessToken = PluginPropertyFactory<Secret> {
+        //Please set your token into res/values, or put it here
         ResourceSecret(R.string.mapbox_access_token)
     }
 }

@@ -1,9 +1,11 @@
 package com.example.mapbox.dash_sdk_demo
 
+import android.media.session.MediaSession.Token
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.commitNow
 import com.mapbox.dash.app.DashNavigationFragment
+import com.mapbox.dash.app.config.DashClusterStyleTransformer
 
 
 class MainActivity : AppCompatActivity() {
@@ -21,5 +23,7 @@ class MainActivity : AppCompatActivity() {
             replace(R.id.container, DashNavigationFragment.newInstance())
         }
     }
+
+
 }
 
